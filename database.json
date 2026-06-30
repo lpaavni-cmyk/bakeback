@@ -1,0 +1,333 @@
+{
+  "users": [
+    {
+      "id": "cust-alex",
+      "email": "customer@bakeback.com",
+      "password": "customer123",
+      "name": "Alex Mercer",
+      "role": "customer",
+      "avatarUrl": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&q=80&w=120",
+      "customerProfile": {
+        "loyaltyPoints": 350,
+        "greenBadges": [
+          "Rescue Rookie",
+          "CO₂ Fighter",
+          "Pastry Defender"
+        ],
+        "savedKg": 8.5,
+        "savedCo2": 21.25,
+        "savedMeals": 17,
+        "coupons": [
+          {
+            "code": "SWEETRESCUE",
+            "discountAmount": 100,
+            "description": "₹100 off next surprise box",
+            "expiryDate": "2026-08-30"
+          }
+        ]
+      }
+    },
+    {
+      "id": "bakery-crust",
+      "email": "bakery@bakeback.com",
+      "password": "bakery123",
+      "name": "Elena Rostova",
+      "role": "bakery",
+      "avatarUrl": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=120",
+      "bakeryProfile": {
+        "id": "bakery-crust",
+        "name": "Crust & Crumb Artisan Bakery",
+        "logo": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&q=80&w=120",
+        "description": "Artisanal breads, flaky pastries, and rustic sourdoughs baked fresh daily with stone-ground heritage flour.",
+        "address": "42 Bakers Row, Sourdough Heights",
+        "latitude": 37.7749,
+        "longitude": -122.4194,
+        "operatingHours": "07:00 - 19:00",
+        "contact": "+1 (555) 123-4567",
+        "safetyCertificate": "FSSAI-9021382103",
+        "gstNumber": "GST-992120-A",
+        "sustainabilityScore": 92,
+        "rating": 4.8,
+        "reviewsCount": 4,
+        "savedKg": 142,
+        "savedCo2": 355,
+        "mealsRescued": 284,
+        "revenueRecovered": 18500
+      }
+    },
+    {
+      "id": "ngo-feed",
+      "email": "ngo@bakeback.com",
+      "password": "ngo123",
+      "name": "Marcus Vance",
+      "role": "ngo",
+      "avatarUrl": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=120",
+      "ngoProfile": {
+        "id": "ngo-feed",
+        "name": "Feed the City Shelter",
+        "description": "Community shelter and kitchen supporting local vulnerable families with healthy hot meals and baked rescues.",
+        "address": "707 Hope Street, Downtown",
+        "contact": "+1 (555) 987-6543",
+        "registrationNumber": "REG-NGO-55102",
+        "mealsDistributed": 1540
+      }
+    },
+    {
+      "id": "admin-sarah",
+      "email": "admin@bakeback.com",
+      "password": "admin123",
+      "name": "Sarah Connor",
+      "role": "admin",
+      "avatarUrl": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=120"
+    }
+  ],
+  "listings": [
+    {
+      "id": "list-1",
+      "bakeryId": "bakery-crust",
+      "bakeryName": "Crust & Crumb Artisan Bakery",
+      "name": "Sourdough Country Loaf",
+      "category": "bread",
+      "description": "Tangy artisan sourdough with a caramelized crunchy crust and open, chewy interior.",
+      "originalPrice": 280,
+      "rescuePrice": 110,
+      "quantity": 4,
+      "expiryTime": "2026-10-30T19:00:00.000Z",
+      "pickupStart": "17:00",
+      "pickupEnd": "19:00",
+      "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&q=80&w=400",
+      "allergens": [
+        "wheat",
+        "gluten"
+      ],
+      "ingredients": "Organic heritage wheat flour, water, sea salt, wild yeast culture.",
+      "label": "vegan",
+      "status": "available",
+      "isRescueBox": false
+    },
+    {
+      "id": "list-2",
+      "bakeryId": "bakery-crust",
+      "bakeryName": "Crust & Crumb Artisan Bakery",
+      "name": "Classic Butter Croissant Bag",
+      "category": "pastry",
+      "description": "A pack of 3 flaky, golden-brown butter croissants layered using French Normandy butter.",
+      "originalPrice": 400,
+      "rescuePrice": 160,
+      "quantity": 2,
+      "expiryTime": "2026-10-30T20:00:00.000Z",
+      "pickupStart": "17:00",
+      "pickupEnd": "19:00",
+      "image": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&q=80&w=400",
+      "allergens": [
+        "wheat",
+        "dairy",
+        "eggs",
+        "gluten"
+      ],
+      "ingredients": "Wheat flour, butter, sugar, yeast, milk, eggs, salt.",
+      "label": "vegetarian",
+      "status": "available",
+      "isRescueBox": false
+    },
+    {
+      "id": "list-3",
+      "bakeryId": "bakery-crust",
+      "bakeryName": "Crust & Crumb Artisan Bakery",
+      "name": "Assorted Sweet Treat Rescue Box",
+      "category": "dessert",
+      "description": "A surprise box of our delicious daily baked treats! May include muffins, sweet croissants, danishes, or brownies.",
+      "originalPrice": 800,
+      "rescuePrice": 250,
+      "quantity": 5,
+      "expiryTime": "2026-10-30T21:00:00.000Z",
+      "pickupStart": "18:00",
+      "pickupEnd": "19:00",
+      "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&q=80&w=400",
+      "allergens": [
+        "wheat",
+        "dairy",
+        "eggs",
+        "nuts",
+        "gluten"
+      ],
+      "ingredients": "Various artisan sweet goods. May contain nuts, chocolate, vanilla, and dairy.",
+      "label": "vegetarian",
+      "status": "available",
+      "isRescueBox": true,
+      "estimatedValue": 800
+    },
+    {
+      "id": "list-4",
+      "bakeryId": "bakery-crust",
+      "bakeryName": "Crust & Crumb Artisan Bakery",
+      "name": "Sourdough Chocolate Chip Cookies",
+      "category": "cookies",
+      "description": "Rich, chewy cookies with hints of caramel and sea salt, baked with sourdough discard.",
+      "originalPrice": 300,
+      "rescuePrice": 120,
+      "quantity": 1,
+      "expiryTime": "2026-10-30T22:00:00.000Z",
+      "pickupStart": "17:00",
+      "pickupEnd": "19:00",
+      "image": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&q=80&w=400",
+      "allergens": [
+        "wheat",
+        "dairy",
+        "soy",
+        "gluten"
+      ],
+      "ingredients": "Flour, sourdough culture, brown sugar, organic butter, dark chocolate chips, sea salt.",
+      "label": "eggless",
+      "status": "available",
+      "isRescueBox": false
+    },
+    {
+      "id": "list-5",
+      "bakeryId": "bakery-crust",
+      "bakeryName": "Crust & Crumb Artisan Bakery",
+      "name": "Tres Leches Pastry Slice",
+      "category": "dessert",
+      "description": "Heavenly light sponge cake soaked in three kinds of milk, topped with freshly whipped cream.",
+      "originalPrice": 250,
+      "rescuePrice": 99,
+      "quantity": 3,
+      "expiryTime": "2026-10-30T23:00:00.000Z",
+      "pickupStart": "17:00",
+      "pickupEnd": "19:00",
+      "image": "https://images.unsplash.com/photo-1549590143-d5855148a9d5?auto=format&fit=crop&q=80&w=400",
+      "allergens": [
+        "wheat",
+        "dairy",
+        "gluten"
+      ],
+      "ingredients": "Flour, milk, condensed milk, evaporated milk, heavy cream, vanilla, sugar.",
+      "label": "vegetarian",
+      "status": "available",
+      "isRescueBox": false
+    },
+    {
+      "id": "list-6",
+      "bakeryId": "bakery-crust",
+      "bakeryName": "Crust & Crumb Artisan Bakery",
+      "name": "Fudgy Chocolate Brownie Pack",
+      "category": "dessert",
+      "description": "A pack of 4 decadent, rich chocolate brownies with a crackly top and ultra-fudgy center.",
+      "originalPrice": 180,
+      "rescuePrice": 70,
+      "quantity": 4,
+      "expiryTime": "2026-10-30T23:00:00.000Z",
+      "pickupStart": "17:00",
+      "pickupEnd": "19:00",
+      "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&q=80&w=400",
+      "allergens": [
+        "wheat",
+        "dairy",
+        "gluten"
+      ],
+      "ingredients": "Cocoa powder, butter, chocolate chunks, flour, sugar, vanilla.",
+      "label": "eggless",
+      "status": "available",
+      "isRescueBox": false
+    },
+    {
+      "id": "list-7",
+      "bakeryId": "bakery-crust",
+      "bakeryName": "Crust & Crumb Artisan Bakery",
+      "name": "Blueberry Cheesecake Slice",
+      "category": "dessert",
+      "description": "Creamy, velvety New York-style cheesecake slice topped with a sweet, tangy wild blueberry compote.",
+      "originalPrice": 300,
+      "rescuePrice": 120,
+      "quantity": 2,
+      "expiryTime": "2026-10-30T23:00:00.000Z",
+      "pickupStart": "17:00",
+      "pickupEnd": "19:00",
+      "image": "https://images.unsplash.com/photo-1524351199679-46cddf530c04?auto=format&fit=crop&q=80&w=400",
+      "allergens": [
+        "wheat",
+        "dairy",
+        "gluten"
+      ],
+      "ingredients": "Cream cheese, graham cracker crust, butter, sour cream, blueberry glaze, sugar.",
+      "label": "vegetarian",
+      "status": "available",
+      "isRescueBox": false
+    }
+  ],
+  "orders": [
+    {
+      "id": "ord-101",
+      "listingId": "list-1",
+      "listingName": "Sourdough Country Loaf",
+      "listingImage": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&q=80&w=400",
+      "bakeryId": "bakery-crust",
+      "bakeryName": "Crust & Crumb Artisan Bakery",
+      "customerId": "cust-alex",
+      "customerName": "Alex Mercer",
+      "quantity": 1,
+      "totalAmount": 110,
+      "pickupSlot": "17:00 - 19:00",
+      "status": "completed",
+      "qrCode": "RESCUE_CONF_ORD101_3X9A",
+      "timestamp": "2026-06-29T05:23:42.704Z",
+      "hasReview": true
+    },
+    {
+      "id": "ord-102",
+      "listingId": "list-2",
+      "listingName": "Classic Butter Croissant Bag",
+      "listingImage": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&q=80&w=400",
+      "bakeryId": "bakery-crust",
+      "bakeryName": "Crust & Crumb Artisan Bakery",
+      "customerId": "cust-alex",
+      "customerName": "Alex Mercer",
+      "quantity": 1,
+      "totalAmount": 160,
+      "pickupSlot": "17:00 - 19:00",
+      "status": "reserved",
+      "qrCode": "RESCUE_CONF_ORD102_7K2D",
+      "timestamp": "2026-06-30T05:23:42.704Z"
+    }
+  ],
+  "donations": [
+    {
+      "id": "don-1",
+      "bakeryId": "bakery-crust",
+      "bakeryName": "Crust & Crumb Artisan Bakery",
+      "ngoId": "ngo-feed",
+      "ngoName": "Feed the City Shelter",
+      "title": "10kg Assorted Artisan Sourdough & Baguettes",
+      "description": "A large batch of surplus unsliced sourdough loaves and crisp French baguettes, baked fresh this morning.",
+      "quantity": 10,
+      "status": "completed",
+      "timestamp": "2026-06-28T17:23:42.704Z",
+      "scheduledPickup": "2026-06-28T18:30:00.000Z"
+    },
+    {
+      "id": "don-2",
+      "bakeryId": "bakery-crust",
+      "bakeryName": "Crust & Crumb Artisan Bakery",
+      "title": "Savory Vegetable Puff Tray",
+      "description": "Tasty vegetarian pastries filled with spiced potato, peas, and carrots. Safe for consumption.",
+      "quantity": 3,
+      "status": "available",
+      "timestamp": "2026-06-30T05:23:42.704Z"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "rev-1",
+      "bakeryId": "bakery-crust",
+      "customerId": "cust-alex",
+      "customerName": "Alex Mercer",
+      "rating": 5,
+      "foodQuality": 5,
+      "freshness": 5,
+      "pickupExperience": 5,
+      "valueForMoney": 5,
+      "comment": "Absolutely amazing sourdough! It was still incredibly fresh, and picking it up was seamless. Saving money while rescuing food is my absolute favorite thing now.",
+      "timestamp": "2026-06-29T06:23:42.704Z"
+    }
+  ]
+}

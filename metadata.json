@@ -1,0 +1,6 @@
+{
+  "name": "bakeback",
+  "description": "Smart Bakery Surplus Management Platform to list discounted leftovers and coordinate donations to NGOs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
